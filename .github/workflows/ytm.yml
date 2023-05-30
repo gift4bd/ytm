@@ -86,14 +86,14 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://youtube.com/@ekhontvbulletin9715/live)
         EOL
-    - name: Get PeaPeaKorea.m3u8
+    - name: Get GaziTV2.m3u8
       run: |
-        touch ./PeaPeaKorea.m3u8
-        sudo cat >./PeaPeaKorea.m3u8 <<EOL
+        touch ./GaziTV2.m3u8
+        sudo cat >./GaziTV2.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/@PeaPeaWorld/live)
+        $(yt-dlp --print urls https://www.youtube.com/channel/UCXuHIkEezOy_b1pnkN0-TIg/live)
         EOL
     - name: Get OddbodsFRIENDS.m3u8
       run: |
