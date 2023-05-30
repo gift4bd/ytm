@@ -77,14 +77,14 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://youtube.com/@EkattorTelevision/live)
         EOL
-    - name: Get HamsterEscape.m3u8
+    - name: Get EkhonTV.m3u8
       run: |
-        touch ./HamsterEscape.m3u8
-        sudo cat >./HamsterEscape.m3u8 <<EOL
+        touch ./EkhonTV.m3u8
+        sudo cat >./EkhonTV.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/@HamsterEscape/live)
+        $(yt-dlp --print urls https://youtube.com/@ekhontvbulletin9715/live)
         EOL
     - name: Get PeaPeaKorea.m3u8
       run: |
