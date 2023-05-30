@@ -39,16 +39,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/@VexTrexKidsCartoon/live)
-        EOL
-    - name: Get Banglavision.m3u8
-      run: |
-        touch ./LionFamily2.m3u8
-        sudo cat >./LionFamily2.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/@lionfamilyenglish4878/live)
+        $(yt-dlp --print urls https://youtube.com/@banglavisionlive/live)
         EOL
     - name: Get Channel24News.m3u8
       run: |
@@ -57,7 +48,16 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/@MashaBearCHINA/live)
+        $(yt-dlp --print urls https://youtube.com/@channel24digital/live)
+        EOL
+    - name: Get Channeli.m3u8
+      run: |
+        touch ./Channeli.m3u8
+        sudo cat >./Channeli.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://youtube.com/c/channelionline/live)
         EOL
     - name: Get Channeli.m3u8
       run: |
