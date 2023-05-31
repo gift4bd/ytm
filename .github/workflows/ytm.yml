@@ -131,14 +131,14 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://youtube.com/c/RtvMusic/live)
         EOL
-    - name: Get LocoNutsCartoonVideos.m3u8
+    - name: Get SomoyTV.m3u8
       run: |
-        touch ./LocoNutsCartoonVideos.m3u8
-        sudo cat >./LocoNutsCartoonVideos.m3u8 <<EOL
+        touch ./SomoyTV.m3u8
+        sudo cat >./SomoyTV.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/@loconutscartoonvideos/live)
+        $(yt-dlp --print urls https://youtube.com/@somoynews360/live)
         EOL
     - name: Get GetMovies.m3u8
       run: |
