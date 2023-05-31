@@ -104,14 +104,14 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://youtube.com/@JamunaTVbd/live)
         EOL
-    - name: Get CANDYCRUSH.m3u8
+    - name: Get NTVBD.m3u8
       run: |
-        touch ./CANDYCRUSH.m3u8
-        sudo cat >./CANDYCRUSH.m3u8 <<EOL
+        touch ./NTVBD.m3u8
+        sudo cat >./NTVBD.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/@KedooToonsTV/live)
+        $(yt-dlp --print urls https://youtube.com/@WatchNTVshows/live)
         EOL
     - name: Get HOGI.m3u8
       run: |
