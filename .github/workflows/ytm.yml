@@ -572,14 +572,14 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/@setinews/live)
         EOL
-    - name: Get FTVLIVE.m3u8
+    - name: Get ACCLive.m3u8
       run: |
-        touch ./FTVLIVE.m3u8
-        sudo cat >./FTVLIVE.m3u8 <<EOL
+        touch ./ACCLive.m3u8
+        sudo cat >./ACCLive.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/@FTVLive/live)
+        $(yt-dlp --print urls https://youtube.com/@AsianCricketCouncilTV/live)
         EOL
     - name: Get FTVCP.m3u8
       run: |
@@ -588,7 +588,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/@FTV_News/live)
+        $(yt-dlp --print urls )
         EOL
     - name: Get CNN-News18.m3u8
       run: |
