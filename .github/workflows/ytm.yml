@@ -599,6 +599,16 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/@cnnnews18/live)
         EOL
+    - name: Get MadaniBangla.m3u8
+      run: |
+        touch ./MadaniBangla.m3u8
+        sudo cat >./MadaniBangla.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://youtube.com/@MadaniChannelBanglaLive/live)
+        EOL
+
 
     - name: git add
       run: |
