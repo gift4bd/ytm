@@ -113,6 +113,15 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://youtube.com/@NTVDigital/live)
         EOL
+    - name: Get News24BD.m3u8
+      run: |
+        touch ./News24BD.m3u8
+        sudo cat >./News24BD.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://youtube.com/@dailynews24x7daily/live)
+        EOL
     - name: Get RTVBD.m3u8
       run: |
         touch ./RTVBD.m3u8
