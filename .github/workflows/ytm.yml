@@ -590,14 +590,14 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://youtube.com/@AsianCricketCouncilTV/live)
         EOL
-    - name: Get FTVCP.m3u8
+    - name: Get IndependentTV.m3u8
       run: |
-        touch ./FTVCP.m3u8
-        sudo cat >./FTVCP.m3u8 <<EOL
+        touch ./IndependentTV.m3u8
+        sudo cat >./IndependentTV.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls )
+        $(yt-dlp --print urls https://youtube.com/@IndependentTelevision/live)
         EOL
     - name: Get CNN-News18.m3u8
       run: |
