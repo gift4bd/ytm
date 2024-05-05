@@ -86,14 +86,14 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://youtube.com/@ekhontv/live)
         EOL
-    - name: Get GaziTV2.m3u8
+    - name: Get DeshTV.m3u8
       run: |
-        touch ./GaziTV2.m3u8
-        sudo cat >./GaziTV2.m3u8 <<EOL
+        touch ./DeshTV.m3u8
+        sudo cat >./DeshTV.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/channel/UCXuHIkEezOy_b1pnkN0-TIg/live)
+        $(yt-dlp --print urls https://youtube.com/@livedeshtv/live)
         EOL
     - name: Get JamunaTV.m3u8
       run: |
