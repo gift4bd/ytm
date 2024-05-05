@@ -149,6 +149,15 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://youtube.com/@somoynews360/live)
         EOL
+    - name: Get NexusTV.m3u8
+      run: |
+        touch ./NexusTV.m3u8
+        sudo cat >./NexusTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://youtube.com/@NexusTelevisionLive/live)
+        EOL
     - name: Get GetMovies.m3u8
       run: |
         touch ./GetMovies.m3u8
